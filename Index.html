@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- material CDN-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <!-- stylesheet-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/Pear-logo.png" alt="pear logo">
+                    <h2>Pä<span class="pearColor">ron</span> AB</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">close </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="Index.html" class="active">
+                    <span class="material-symbols-outlined">
+                        grid_view </span>
+                        <h3>dashboard</h3>
+                </a>
+                <a href="varulager.html">
+                    <span class="material-symbols-outlined">
+                        shelves </span>
+                        <h3>Varulager</h3>
+                </a>
+                <a href="produkter.html">
+                    <span class="material-symbols-outlined">
+                        inventory_2</span>
+                        <h3>produkter</h3>
+                </a>
+                <a href="leveranser.html">
+                    <span class="material-symbols-outlined">
+                        local_shipping</span>
+                        <h3>Leveranser</h3>
+                </a>
+            
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        logout</span>
+                        <h3>Logga ut</h3>
+                </a>
+            </div>
+        </aside>
+        <!------------------End of aside-------------------->
+        <main>
+            <h1>dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insight">
+                <div class="sales">
+                    <span class="material-symbols-outlined">search</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>sök</h3>
+                            <h1>€25,324</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <!--------end of sales--------->
+                <div class="expenses">
+                    <span class="material-symbols-outlined">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>total expenses</h3>
+                            <h1>€25,324</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <!--------end of expense--------->
+                <div class="income">
+                    <span class="material-symbols-outlined">stacked_line_chart
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>sök</h3>
+                            <h1>€25,324</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <!--------end of income--------->
+            </div>
+            <div class="recent-orders">
+                <h2> recent orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Artikelnummer</th>
+                            <th>Produktnamn</th>
+                            <th>Lager</th>
+                            <th>pris</th>
+                            <th>Lagersaldo</th>
+                            <th>status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td>P001</td>    
+                            <td>jtelefon</td>   
+                            <td>cupertino</td>   
+                            <td>8900 kr</td>   
+                            <td>170000</td>   
+                            <td class="success">pending</td>
+                            <td class="primary">details</td>   
+                       </tr><tr>
+                        <td>P002</td>    
+                        <td>jPlatta</td>   
+                        <td>cupertino</td>   
+                        <td>5700 kr</td>   
+                        <td>41500</td>   
+                        <td class="warning">pending</td>
+                        <td class="primary">details</td>   
+                   </tr><tr>
+                    <td>P003</td>    
+                    <td>päronklocka</td>   
+                    <td>cupertino</td>   
+                    <td>11000 kr</td>   
+                    <td>90000</td>   
+                    <td class="success">pending</td>
+                    <td class="primary">details</td>   
+              </tr><tr>
+                <td>P001</td>    
+                <td>jtelefon</td>   
+                <td>Frankfurt</td>   
+                <td>8900 kr</td>   
+                <td>101700</td>   
+                <td class="warning">pending</td>
+                <td class="primary">details</td>   
+           </tr><tr>
+            <td>P002</td>    
+            <td>jPlatta</td>   
+            <td>Frankfurt</td>   
+            <td>5700 kr</td>   
+            <td>72400</td>   
+            <td class="success">pending</td>
+            <td class="primary">details</td>   
+       </tr><tr>
+        <td>P003</td>    
+        <td>päronklocka</td>   
+        <td>Frankfurt</td>   
+        <td>11000 kr</td>   
+        <td>25000</td>   
+        <td class="warning">pending</td>
+        <td class="primary">details</td>   
+   </tr><tr>
+    <td>P001</td>    
+    <td>jtelefon</td>   
+    <td>Norrköping</td>   
+    <td>8900 kr</td>   
+    <td>55000</td>   
+    <td class="warning">pending</td>
+    <td class="primary">details</td>   
+</tr><tr>
+    <td>P002</td>    
+    <td>jPlatta</td>   
+    <td>Norrköping</td>   
+    <td>5700 kr</td>   
+    <td>104300</td>   
+    <td class="success">pending</td>
+    <td class="primary">details</td>   
+</tr><tr>
+    <td>P003</td>    
+    <td>päronklocka</td>   
+    <td>Norrköping</td>   
+    <td>11000 kr</td>   
+    <td>38000</td>   
+    <td class="warning">pending</td>
+    <td class="primary">details</td>   
+</tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+<!------------------------end of main----------------------------->
+<div class="right">
+    <div class="top">
+        <button id="menu-btn">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        <div class="theme-toggler">
+            <span class="material-symbols-outlined active">light_mode</span>
+            <span class="material-symbols-outlined">dark_mode</span>
+        </div>
+        <div class="profile">
+            <div class="info">
+                <p>Hej, <b>Daniel</b></p>
+                <small class="text-muted">Admin</small>
+            </div>
+        <div class="profile-photo">
+            <img src="./images/pngtree-user-avatar-boy-image_1482937.jpg">
+        </div>
+    </div>
+</div>
+<!----------end of top-------->
+
+<script src="./app.js"></script>
+</body>
+
+</html>
